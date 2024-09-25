@@ -1,0 +1,8 @@
+## Interface: 110002
+## Title: FlowerPower
+## Author: FancyPantsy
+## Version: 1
+## SavedVariables: FPX
+
+init.lua
+main.lua
