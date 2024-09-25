@@ -21,7 +21,7 @@ function ns.DisableCustomSearch()
     local f = AuctionHouseFrame.SearchBar
     local filter = Enum.AuctionHouseFilter.CurrentExpansionOnly
 
-    if f.FilterButton.filters[filter] then
+    if f.FilterButton.filters[filter] == true then
         f.FilterButton:ToggleFilter(filter)
     end
 
@@ -33,15 +33,16 @@ function ns.EnableCustomSearch()
     local f = AuctionHouseFrame.SearchBar
     local filter = Enum.AuctionHouseFilter.CurrentExpansionOnly
 
-    if not f.FilterButton.filters[filter] then
+    if f.FilterButton.filters[filter] == false then
         f.FilterButton:ToggleFilter(filter)
     end
 
     f.SearchButton:SetText("FlowerSearch")
-    f.FilterButton:SetText("FlowerPower")
+    f.FilterButton:SetText("FPX ON")
 end
 
-SlashCmdList["FLOWERPOWER"] = function(userInput)    local input = tostring(userInput)
+SlashCmdList["FLOWERPOWER"] = function(userInput)    
+    local input = tostring(userInput)
     if input == "" then ns.HelpFunction();
     elseif input == "off" then ns.DisableCustomSearch();
     elseif input == "on" then ns.EnableCustomSearch();
@@ -50,14 +51,12 @@ end
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("AUCTION_HOUSE_SHOW")
-f:RegisterEvent("ADDON_LOADED")
 f:SetScript("OnEvent", function(self, event)
     if event == "AUCTION_HOUSE_SHOW" then
         ns.EnableCustomSearch()
-        f:UnregisterEvent("AUCTION_HOUSE_SHOW")
-    elseif event == "ADDON_LOADED" then
-        --do nothing
-        f:UnregisterEvent("ADDON_LOADED")
     end
 end)
+
+
+
 
