@@ -3,7 +3,7 @@
 ## Author: FancyPantsy
 ## Version: 1
 ## SavedVariables: FPX
-## IconTextire: Interface\Addons\FlowerPower\Images\flowerSmall.jpg
+## IconTexture: Interface\Addons\FlowerPower\Images\flowerSmall.jpg
 
 init.lua
 main.lua
