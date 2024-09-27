@@ -3,6 +3,7 @@
 ## Author: FancyPantsy
 ## Version: 1
 ## SavedVariables: FPX
+## IconTextire: images\flowerSmall.jpg
 
 init.lua
 main.lua
