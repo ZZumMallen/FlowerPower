@@ -1,6 +1,6 @@
 package-as: FlowerPower
 
 ignore:
-    - .gtignore
+    - .gitignore
     - .vscode
     - Templates
