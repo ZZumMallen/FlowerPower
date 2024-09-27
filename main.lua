@@ -1,44 +1,44 @@
 local _, ns = ...
 
-SLASH_FLOWERPOWER1 = "/fpx"
-SLASH_FLOWERPOWER2 = "/flower"
+SLASH_FLOWERPOWER1 = "/fpx";
+SLASH_FLOWERPOWER2 = "/flower";
 
 function ns.HelpFunction()
-   print(" /fpx on - to enable custom search")
-   print(" /fpx off - to disable custom search")
+   print(" /fpx on - to enable custom search");
+   print(" /fpx off - to disable custom search");
 end
 
 function ns.Diagnostics()
-    print("FPX diahs")
+    print("FPX diahs");
 end
 
 function ns.Enable()
-    print("FPX on")
+    print("FPX on");
 end
 
 
 function ns.DisableCustomSearch()
-    local f = AuctionHouseFrame.SearchBar
-    local filter = Enum.AuctionHouseFilter.CurrentExpansionOnly
+    local f = AuctionHouseFrame.SearchBar;
+    local filter = Enum.AuctionHouseFilter.CurrentExpansionOnly;
 
     if f.FilterButton.filters[filter] == true then
-        f.FilterButton:ToggleFilter(filter)
+        f.FilterButton:ToggleFilter(filter);
     end
 
-    f.SearchButton:SetText("Search")
-    f.FilterButton:SetText("Filter")
+    f.SearchButton:SetText("Search");
+    f.FilterButton:SetText("Filter");
 end
 
 function ns.EnableCustomSearch()
-    local f = AuctionHouseFrame.SearchBar
-    local filter = Enum.AuctionHouseFilter.CurrentExpansionOnly
+    local f = AuctionHouseFrame.SearchBar;
+    local filter = Enum.AuctionHouseFilter.CurrentExpansionOnly;
 
     if f.FilterButton.filters[filter] == false then
-        f.FilterButton:ToggleFilter(filter)
+        f.FilterButton:ToggleFilter(filter);
     end
 
-    f.SearchButton:SetText("FlowerSearch")
-    f.FilterButton:SetText("FPX ON")
+    f.SearchButton:SetText("FlowerSearch");
+    f.FilterButton:SetText("FPX ON");
 end
 
 SlashCmdList["FLOWERPOWER"] = function(userInput)    
