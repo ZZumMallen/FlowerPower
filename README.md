@@ -17,4 +17,4 @@ These are mostlyy for debugging and testing but here they are:
 
 # 11/2/24
 - Refactored a bunch of things
-- attempted to get the automatic packaging to work 
+- attempted to get the automatic packaging to work  
