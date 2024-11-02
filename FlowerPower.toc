@@ -1,9 +1,11 @@
 ## Interface: 110002
 ## Title: FlowerPower
 ## Author: FancyPantsy
-## Version: 1.1
+## Version: 1.2
 ## SavedVariables: FPX
 ## IconTexture: Interface\Addons\FlowerPower\Images\flowerSmall.jpg
 
 init.lua
+orders.lua
+auction.lua
 main.lua
