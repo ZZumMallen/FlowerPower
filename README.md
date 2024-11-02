@@ -14,3 +14,7 @@ These are mostlyy for debugging and testing but here they are:
 
 # 10/26 Updates
 * Added FlowerPower functionality to the crafting order frame.
+
+# 11/2/24
+- Refactored a bunch of things
+- attempted to get the automatic packaging to work
