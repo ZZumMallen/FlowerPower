@@ -3,6 +3,7 @@
 ## Author: FancyPantsy
 ## Version: 1.2
 ## SavedVariables: FPX
+## X-Curse-Project-ID: 1110552
 ## IconTexture: Interface\Addons\FlowerPower\Images\flowerSmall.jpg
 
 init.lua
