@@ -10,4 +10,7 @@ These are mostlyy for debugging and testing but here they are:
 * /fpx on - will select "Current Expansion Only and toggle the button text back to custom 
 
 # Any Future Plans?
-I might add an entirely unnecessary defaults window where you can set custom defaults. None of this is needed. I have ADHD
+* Method to customize default settings
+
+# 10/26 Updates
+* Added FlowerPower functionality to the crafting order frame.

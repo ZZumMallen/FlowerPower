@@ -1,5 +1,7 @@
 package-as: FlowerPower
 
+url: https://github.com/ZZumMallen/FlowerPower
+
 ignore:
     - .gitignore
     - .vscode
